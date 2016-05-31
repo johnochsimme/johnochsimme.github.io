@@ -4,21 +4,49 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	<meta name="theme-color" content="#103D82">
+	<meta name="theme-color" content="#ff0000">
 	<title>John Rapp &amp; Simme Pinne</title>
 
 	<style media="screen">
+		body {
+			margin: 0;
+		}
 		#main-image {
 			width: 100%;
+		}
+		.song {
+			width: 50%;
+			position: relative;
+			float: left;
+		}
+		.song img {
+			width: 100%;
+		}
+		.song .name {
+			width: 100%;
+			position: absolute;
+			left: 10px;
+			bottom: 10px;
+			font-size: 20px;
 		}
 	</style>
 </head>
 <body>
 
-Hej och välkommen till vår sida
+<img id="main-image" src="image-cropped.JPG">
 
-<img id="main-image" src="image.JPG">
-
+<div class="songs">
+	<div class="song">
+		<img src="varmdos-stolthet.JPG">
+	</div>
+	<div class="song">
+		<img src="samhallet-suger.JPG">
+	</div>
+	<div class="song">
+		<img src="batvakterna.JPG">
+	</div>
+	<div style="clear: both"></div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
 <script type="text/javascript">
