@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
+<!-- Vi borde fett ha ett easter egg i kommentarerna -->
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="theme-color" content="#103D82">
 	<title>John Rapp &amp; Simme Pinne</title>
+
+	<style media="screen">
+		#main-image {
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
 
 Hej och välkommen till vår sida
 
+<img id="main-image" src="main.jpg">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+<script type="text/javascript">
+
+angular.module('app', []);
+
+</script>
 </body>
 </html>
